@@ -94,3 +94,37 @@ sudo apt remove code-server
 ```bash
 sudo apt remove nginx
 ```
+
+### Postgres.
+
+```bash
+sudo apt install -y postgresql
+```
+```bash
+systemctl status postgresql
+```
+```bash
+sudo apt install -y postgresql-client
+```
+
+### Cómo configurar PostgreSQL en Ubuntu 22.04 LTS.
+
+```bash
+sudo nano /etc/postgresql/14/main/pg_hba.conf
+```
+```bash
+# Acceso remoto
+host    all             all             all                     scram-sha-256
+```
+```bash
+sudo nano /etc/postgresql/14/main/postgresql.conf
+```
+```bash
+listen_addresses = '*'                  # what IP address(es) to listen on;
+```
+```bash
+sudo systemctl restart postgresql
+```
+```bash
+sudo ufw allow postgresql
+```
