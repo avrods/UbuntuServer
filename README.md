@@ -25,10 +25,10 @@ sudo snap install certbot --classic
 sudo mv /etc/nginx/sites-available/AQUICAMBIAR.conf
 ```
 ```bash
-sudo rm -rf /etc/nginx/sites-enable/defaut
+sudo rm -rf /etc/nginx/sites-enabled/defaut
 ```
 ```bash
-sudo ln -s /etc/nginx/sites-available/AQUICAMBIAR.conf /etc/nginx/sites-enable/
+sudo ln -s /etc/nginx/sites-available/AQUICAMBIAR.conf /etc/nginx/sites-enabled/
 ```
 ### Agregar configuración.
 
