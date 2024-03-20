@@ -76,3 +76,21 @@ server {
   }
 }
 ```
+```bash
+nano ~/.config/code-server/config.yaml
+```
+
+### Uninstallation or remove Code Server.
+
+```bash
+sudo systemctl stop nginx
+```
+```bash
+sudo systemctl stop code-serverf@$USER
+```
+```bash
+sudo apt remove code-server
+```
+```bash
+sudo apt remove nginx
+```
