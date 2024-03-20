@@ -158,3 +158,27 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 ```bash
 sudo service apache2 reload
 ```
+```bash
+sudo /usr/pgadmin4/bin/setup-web.sh
+```
+
+### Mismo usuario de hostname.
+
+```bash
+adduser AQUIUSUARIO
+```
+```bash
+su - postgres
+```
+```bash
+createuser AQUIUSUARIO
+```
+```bash
+createdb db_test -O AQUIUSUARIO
+```
+```bash
+ALTER USER postgres WITH PASSWORD 'MICONTRASEÑA';
+```
+```bash
+ALTER USER postgres WITH SUPERUSER;
+```
