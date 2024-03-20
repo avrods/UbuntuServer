@@ -177,6 +177,9 @@ createuser AQUIUSUARIO
 createdb db_test -O AQUIUSUARIO
 ```
 ```bash
+psql
+```
+```bash
 ALTER USER postgres WITH PASSWORD 'MICONTRASEÑA';
 ```
 ```bash
