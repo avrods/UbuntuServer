@@ -12,3 +12,12 @@ sudo nano /etc/hosts
 ```bash
 sudo systemctl reboot
 ```
+
+### Al reiniciar.
+
+```bash
+sudo apt install -y nginx
+```
+```bash
+sudo snap install certbot --classic
+```
