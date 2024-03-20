@@ -128,3 +128,33 @@ sudo systemctl restart postgresql
 ```bash
 sudo ufw allow postgresql
 ```
+
+### pgAdmin en Ubuntu 20.04.
+
+```bash
+wget -qO- https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add -
+```
+```bash
+sudo nano /etc/apt/sources.list.d/pgadmin.list
+```
+```bash
+deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy pgadmin4 main
+```
+```bash
+sudo apt update
+```
+```bash
+sudo apt install -y pgadmin4-web
+```
+```bash
+sudo apt-get install -y apache2
+```
+```bash
+sudo nano /etc/apache2/ports.conf
+```
+```bash
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+```bash
+sudo service apache2 reload
+```
