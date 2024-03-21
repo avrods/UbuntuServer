@@ -185,3 +185,7 @@ ALTER USER postgres WITH PASSWORD 'MICONTRASEÑA';
 ```bash
 ALTER USER postgres WITH SUPERUSER;
 ```
+### Eliminar comandos del terminal.
+```bash
+echo "" > ~/.bash_history && history -c && exit
+```
