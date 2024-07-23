@@ -30,6 +30,12 @@ sudo rm -rf /etc/nginx/sites-enabled/defaut
 ```bash
 sudo ln -s /etc/nginx/sites-available/AQUICAMBIAR.conf /etc/nginx/sites-enabled/
 ```
+```bash
+sudo nginx -t
+```
+```bash
+sudo systemctl restart nginx
+```
 ### Agregar configuración.
 
 ```bash
