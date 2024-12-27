@@ -241,6 +241,7 @@ Para actualizar a Python 3.13 en tu Ubuntu Server 22.04, puedes seguir estos pas
    Después de la instalación, verifica que Python 3.13 esté disponible ejecutando:
    ```bash
    python3.13 --version
+   sudo apt install python-is-python3
    ```
 
 6. **Crear un enlace simbólico (opcional)**:
